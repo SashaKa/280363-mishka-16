@@ -68,6 +68,116 @@
     </div>
   </header>
 
+  <main class="main">
+    <div class="content-form">
+      <h1 class="content-form__title"></h1>
+    </div>
+
+    <form action="#" class="form" method="get">
+      <div class="wrapper">
+        <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      </div>
+
+      <fieldset class="form__set">
+        <div class="wrapper">
+          <div class="form__title">Тип</div>
+          <div class="form__wrapper">
+            <label class="radio">
+              <input type="radio" name="knitting-radio" value="Аксессуар для
+              интерьера" class="radio__value" checked>
+              <span class="radio__title">Аксессуар для
+                интерьера</span>
+              <span class="radio__state"></span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="knitting-radio" value="Детская игрушка" class="radio__value">
+              <span class="radio__title">Детская игрушка</span>
+              <span class="radio__state"></span>
+            </label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form__set  form__set--repainting">
+        <div class="wrapper  wrapper--flex">
+          <div class="form__title">Цвет</div>
+          <div class="form__wrapper  form__wrapper--color">
+            <label class="checkbox">
+              <input class="checkbox__value" type="checkbox" name="knitting-checkbox" value="Белый" checked>
+              <span class="checkbox__title">Белый</span>
+              <span class="checkbox__state"></span>
+            </label>
+            <label class="checkbox">
+              <input class="checkbox__value" type="checkbox" name="knitting-checkbox" value="Серый" checked>
+              <span class="checkbox__title">Серый</span>
+              <span class="checkbox__state"></span>
+            </label>
+            <label class="checkbox">
+              <input class="checkbox__value" type="checkbox" name="knitting-checkbox" value="Тиффани">
+              <span class="checkbox__title">«Тиффани»</span>
+              <span class="checkbox__state"></span>
+            </label>
+            <label class="checkbox">
+              <input class="checkbox__value" type="checkbox" name="knitting-checkbox" value="Чёрный">
+              <span class="checkbox__title">Чёрный</span>
+              <span class="checkbox__state"></span>
+            </label>
+            <label class="checkbox">
+              <input class="checkbox__value" type="checkbox" name="knitting-checkbox" value="Розовый">
+              <span class="checkbox__title">Розовый</span>
+              <span class="checkbox__state"></span>
+            </label>
+            <label class="checkbox">
+              <input class="checkbox__value" type="checkbox" name="knitting-checkbox" value="Оранжевый">
+              <span class="checkbox__title">Оранжевый</span>
+              <span class="checkbox__state"></span>
+            </label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form__set  form__set--full-name">
+        <div class="wrapper  wrapper--flex">
+          <div class="form__title">ФИО</div>
+          <div class="form__wrapper">
+            <label class="input">
+              <span class="input__title">Фамилия:</span>
+              <input class="input__value" type="text" name="fields" placeholder="Укажите фамилию">
+            </label>
+            <label class="input">
+              <span class="input__title">Имя:</span>
+              <input class="input__value" type="text" name="fields" placeholder="Введите ваше имя">
+            </label>
+            <label class="input">
+              <span class="input__title">Отчество:</span>
+              <input class="input__value" type="text" name="fields" placeholder="Отчество, если желаете">
+            </label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form__set  form__set--repainting  form__set--email">
+        <div class="wrapper  wrapper--flex">
+          <label class="form__title  form__title--stick" for="mail">E-mail</label>
+          <div class="form__wrapper">
+            <label class="input  input--stick">
+              <input class="input__value  input__value--email-bg  input__value--stick" id="mail" type="email" name="email" placeholder="Ваш e-mail">
+              <svg class="icon  icon--input" width="30" height="30">
+                <use xlink:href="img/symbols.svg#icon-mail" />
+              </svg>
+            </label>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="wrapper wrapper--flex">
+        <button class="button  button--average  button--form" type="button" name="knitting-button">Отправить заказ</button>
+        <div class="form__delivery">Все поля являются обязательными</div>
+      </div>
+
+    </form>
+  </main>
+
   <footer class="footer">
     <div class="footer__wrapper  wrapper">
       <div class="logo-footer footer__column">
@@ -105,4 +215,4 @@
     </div>
   </footer>
 
-<body>
+  <body>
