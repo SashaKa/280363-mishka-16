@@ -1,0 +1,37 @@
+.site-menu__link {
+  display: block;
+
+  padding: 28px 20px;
+  padding-left: 75px;
+
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+
+  &:hover,
+  &:active {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .site-menu__link {
+    padding: 0;
+
+    font-size: 15px;
+    vertical-align: top;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-menu__link {
+    padding: 0;
+
+    font-size: 17px;
+  }
+}
