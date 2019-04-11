@@ -1,4 +1,72 @@
+.catalog {
+  display       : flex;
+  flex-direction: column;
+
+  margin : 0;
+  padding: 0;
+
+  list-style: none;
+
+}
+.catalog__item {
+  width: 100%;
+}
+
 .catalog__link {
+
+  position: relative;
+
+  svg {
+    position: absolute;
+
+    fill   : #149080;
+    opacity: 0.5;
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      opacity: 0.7;
+    }
+  }
+
+  &:focus {
+    svg {
+      opacity: 0.3;
+    }
+  }
+}
+
+.catalog__item--interior {
+  .catalog__link {
+    background-color: @color-green;
+
+    svg {
+      top  : 15px;
+      right: 37px;
+    }
+  }
+}
+
+.catalog__item--toys {
+  .catalog__link {
+    background-color: @color-green-saturated;
+
+    svg {
+      top  : 15px;
+      right: 27px;
+    }
+  }
+
+}
+
+.catalog__link {
+  display: block;
+  padding-top: 26px;
+  padding-left: 27px;
+  padding-bottom: 29px;
+  padding-right: 120px;
+
   font-size  : 19px;
   line-height: 24px;
   font-weight: 700;
