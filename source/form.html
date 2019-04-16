@@ -143,11 +143,11 @@
           <div class="form__wrapper">
             <label class="input">
               <span class="input__title">Фамилия:</span>
-              <input class="input__value" type="text" name="fields" placeholder="Укажите фамилию">
+              <input class="input__value" type="text" name="fields" placeholder="Укажите фамилию*">
             </label>
             <label class="input">
               <span class="input__title">Имя:</span>
-              <input class="input__value" type="text" name="fields" placeholder="Введите ваше имя">
+              <input class="input__value" type="text" name="fields" placeholder="Введите ваше имя*">
             </label>
             <label class="input">
               <span class="input__title">Отчество:</span>
@@ -158,7 +158,7 @@
       </fieldset>
 
       <fieldset class="form__set  form__set--repainting  form__set--email">
-        <div class="wrapper  wrapper--flex">
+        <div class="wrapper">
           <label class="form__title  form__title--stick" for="mail">E-mail</label>
           <div class="form__wrapper">
             <label class="input  input--stick">
@@ -171,9 +171,18 @@
         </div>
       </fieldset>
 
+      <fieldset class="form__set form__set--additional">
+        <div class="wrapper">
+          <label for="wishes" class="form__title form__title--stick">Доп</label>
+          <div class="form__wrapper">
+            <label for="" class="input"><textarea name="wishes" id="wishes" cols="30" rows="10" placeholder="Опишите все ваши
+            пожелания к заказу" class="input__value"></textarea></label></div>
+        </div>
+      </fieldset>
+
       <div class="wrapper wrapper--flex">
         <button class="button  button--average  button--form" type="button" name="knitting-button">Отправить заказ</button>
-        <div class="form__delivery">Все поля являются обязательными</div>
+        <div class="form__delivery">*Поля обязательны для заполнения</div>
       </div>
 
     </form>
